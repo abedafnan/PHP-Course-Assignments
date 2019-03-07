@@ -11,43 +11,46 @@
 		private $content;
 
 		function setTitle($title) {
-			$this -> title = $title;
+			$this->title = $title;
 		}
 
 		function setID($id) {
-			$this -> id = $id;
+			$this->id = $id;
 		}
 
 		function setContent($content) {
-			$this -> content = $content;
+			$this->content = $content;
 		}
 
 		function getTitle() {
-			return $this -> title;
+			return $this->title;
 		}
 
 		function getID() {
-			return $this -> id;
+			return $this->id;
 		}
 
 		function getContent() {
-			return $this -> content;
+			return $this->content;
 		}
 
-		$sec = new Section();
-		$sec => setTitle("Section 1");
-		$sec => setID("SEC01");
-		$sec => setContent("Some Text");
 	}
+
+	$sec = new Section;
+	$sec->setTitle("Section Title");
+	$sec->setID("01234");
+	$sec->setContent("Section Content");
 ?>
 
 <!DOCTYPE html>
 <html>
 	<body>
 		<ul>
-			<li> <? echo "$sec->getTitle()"; ?> </li>
-			<li> <? echo "$sec->getID()"; ?> </li>
-			<li> <? echo "$sec->getContent()"; ?> </li>	
+			<li> <? echo $sec->getTitle(); ?> </li>
+			<li> <? echo $sec->getID(); ?> </li>
+			<li> <? echo $sec->getContent(); ?> </li>	
 		</ul>
 	</body>
 </html>
+
+ 
